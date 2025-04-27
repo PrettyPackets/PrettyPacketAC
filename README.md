@@ -1,4 +1,4 @@
-# 💖 PrettyPacketAC - Free Open Source Anticheat 💖
+# 💖 PrettyPacketAC - Free Open Source Anticheat for FiveM💖
 
 Hey there, lovelies! 🌸✨ Welcome to **PrettyPacketAC** — the **cutest** and **most fabulous** ✨ FREE ✨ open-source anticheat project on the internet! 🎀
 
