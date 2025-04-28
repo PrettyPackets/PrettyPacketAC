@@ -22,3 +22,45 @@ PrettyPacketAC.AntiInvisible = {
     enabled = true,
     action = "WARN",
 }
+
+
+PrettyPacketAC.AntiRapidFire = {
+    enabled = true,
+    action = "WARN",
+}
+
+PrettyPacketAC.AntiInfiniteAmmo = {
+    enabled = true, -- Does not Ban Just Detects
+}
+
+PrettyPacketAC.AntiHitboxModifier = {
+    enabled = true,
+    action = "WARN",
+}
+
+--==============================================================
+          -- 🌸🔒 ～～～ WEAPON BLACKLIST ～～～ 🔒🌸
+--==============================================================
+
+PrettyPacketAC.WeaponsBlacklist = {
+    enabled = true,
+    action = "WARN",
+}
+
+PrettyPacketAC.WeaponsBlacklistDict = {
+    ['Heavy Sniper'] = 'weapon_heavysniper',
+    ['Sniper Rifle'] = "weapon_sniperrifle",
+}
+
+--==============================================================
+       -- 🌸🔒 ～～～ VEHICLE BLACKLIST ～～～ 🔒🌸
+--==============================================================
+
+PrettyPacketAC.VehicleBlacklist = {
+    enabled = true,
+    action = "WARN",
+}
+
+PrettyPacketAC.VehicleBlacklistDict = {
+    ["oppressor"] = true,
+}
