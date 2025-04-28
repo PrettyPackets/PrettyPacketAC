@@ -87,6 +87,17 @@ This is just the beginning, sweeties! 🌸 Stay tuned for **tons** of new featur
 2. 🛠️ Build and set up on your server
 3. 🎮 Enjoy cheat-free, magical gameplay!
 
+## 📚 How to Enable Heartbeat
+1. 🌟 Add this snippet at the bottom of any client resource file (Not in the anticheat)
+```
+AddEventHandler('onClientResourceStop', function(resourceName)
+    if resourceName == "PrettyPacketAC" then
+        CancelEvent()
+        TriggerServerEvent('qb-target:saveupdatedpropstarget') -- Event for detecting anticheat stopping on client's side
+    end
+end)
+```
+
 ---
 
 ## 💬 Stay Connected!
