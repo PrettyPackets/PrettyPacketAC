@@ -25,13 +25,17 @@ This is just the beginning, sweeties! 🌸 Stay tuned for **tons** of new featur
 | 💥 Anti-Godmode (3 Methods)     | Prevents players from using godmode.    |
 | ✨ Anti-Invisible                | Detects and blocks invisible players.  |
 | 🏃‍♂️ Anti-Infinite Stamina (2 Methods) | Stops infinite stamina exploits.    |
+| 🏃‍♂️ Anti-RapidFire             | Stops rapid fire cheats.               |
+| 💥 Anti-Infinite Ammo           | Prevents players from using infinite ammo. |
+| 🦸 Anti-BiggerHitbox            | Prevents changing hitbox sizes.        |
+| 🚙 Vehicle-Blacklist            | Blocks vehicles used for cheating.     |
+| ⚔️ Weapon-Blacklist            | Blocks Weapons used for cheating.     |
 
 ### 🔜 Pending Features
 
 | Feature                        | Description                             |
 |---------------------------------|-----------------------------------------|
 | 🛡️ Anti-Armor                  | Detects and blocks armor-related exploits. |
-| 💥 Anti-Infinite Ammo           | Prevents players from using infinite ammo. |
 | 👁️ Anti-Spectate               | Stops players from spectating others.  |
 | 🕳️ Anti-NoClip                 | Detects and blocks NoClip mode.        |
 | ⚔️ Anti-WeaponSpawn             | Prevents spawning of illegal weapons.  |
@@ -52,9 +56,7 @@ This is just the beginning, sweeties! 🌸 Stay tuned for **tons** of new featur
 | 🛸 Anti-EntitySpawning          | Prevents illegal entity spawning.      |
 | 🔊 Anti-Sound                   | Blocks sound-related cheats.           |
 | 🎯 Anti-MagicBullet             | Prevents "magic bullet" exploits.      |
-| 🏃‍♂️ Anti-RapidFire             | Stops rapid fire cheats.               |
 | 👾 Anti-CitizenMods             | Blocks citizen mod exploits.           |
-| 🦸 Anti-BiggerHitbox            | Prevents changing hitbox sizes.        |
 | 💣 Anti-ExplosiveAmmo           | Stops players from using explosive ammo cheats. |
 | 🚧 Anti-Teleport (With Temp Bypasses) | Detects teleportation exploits and includes temp bypasses. |
 | 🛠️ Anti-NUIDevTools             | Blocks NUI developer tool usage.      |
@@ -74,7 +76,6 @@ This is just the beginning, sweeties! 🌸 Stay tuned for **tons** of new featur
 | 🧐 OCR Detections               | Detects and blocks OCR-based cheats.   |
 | 🛡️ Prop-Whitelist               | Whitelist for props to prevent cheating. |
 | 🚗 Object-Whitelist             | Whitelist for objects to prevent cheating. |
-| 🚙 Vehicle-Blacklist            | Blocks vehicles used for cheating.     |
 | 👤 Ped-Blacklist                | Blocks ped (character) based cheats.   |
 
 
