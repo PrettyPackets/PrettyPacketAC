@@ -30,6 +30,12 @@ This is just the beginning, sweeties! 🌸 Stay tuned for **tons** of new featur
 | 🦸 Anti-BiggerHitbox            | Prevents changing hitbox sizes.        |
 | 🚙 Vehicle-Blacklist            | Blocks vehicles used for cheating.     |
 | ⚔️ Weapon-Blacklist            | Blocks Weapons used for cheating.     |
+| ❤️ Heartbeat System             | Tracks and manages server health.       |
+| 🕳️ Anti-NoClip                 | Detects and blocks NoClip mode.        |
+| 🚀 Anti-SuperJump               | Stops superjump exploits.              |
+| 🌙 Anti-Nightvision             | Stops players from using night vision cheats. |
+| 🌡️ Anti-Thermals               | Blocks thermal vision exploits.        |
+| 🏃 Anti-SpeedChanger            | Stops players from changing their speed. |
 
 ### 🔜 Pending Features
 
@@ -37,15 +43,10 @@ This is just the beginning, sweeties! 🌸 Stay tuned for **tons** of new featur
 |---------------------------------|-----------------------------------------|
 | 🛡️ Anti-Armor                  | Detects and blocks armor-related exploits. |
 | 👁️ Anti-Spectate               | Stops players from spectating others.  |
-| 🕳️ Anti-NoClip                 | Detects and blocks NoClip mode.        |
 | ⚔️ Anti-WeaponSpawn             | Prevents spawning of illegal weapons.  |
-| 🏃 Anti-SpeedChanger            | Stops players from changing their speed. |
 | 🎮 Anti-Freecam                 | Blocks freecam exploits.               |
 | 🛠️ Anti-PlateChanger           | Prevents altering plates (e.g. vehicles, characters). |
-| 🌙 Anti-Nightvision             | Stops players from using night vision cheats. |
-| 🌡️ Anti-Thermals               | Blocks thermal vision exploits.        |
 | 🏃‍♀️ Anti-NoRagdoll            | Prevents the removal of ragdoll physics. |
-| 🚀 Anti-SuperJump               | Stops superjump exploits.              |
 | 🎯 Anti-AimAssist               | Blocks aim assist cheats.              |
 | 🔨 Anti-DamageChanger           | Prevents players from changing damage dealt. |
 | 🧨 Anti-TriggerSpam             | Stops trigger spam attacks.            |
@@ -69,7 +70,6 @@ This is just the beginning, sweeties! 🌸 Stay tuned for **tons** of new featur
 
 | Feature                        | Description                             |
 |---------------------------------|-----------------------------------------|
-| ❤️ Heartbeat System             | Tracks and manages server health.       |
 | 📚 Logging                      | Detailed logs for all activities.      |
 | 💫 Bypasses                     | Includes temporary bypasses for certain detections. |
 | 🔒 Database Banning             | Blocks cheaters through database bans. |
