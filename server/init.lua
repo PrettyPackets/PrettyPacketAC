@@ -55,4 +55,3 @@ AddEventHandler('onResourceStart', function(resourceName)
         PrettyConsoleLog("success", "PrettyPacketAC Has Been Initialised")
     end
 end)
-

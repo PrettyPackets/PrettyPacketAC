@@ -4,6 +4,7 @@ PrettyPacketAC.Debug = true
 
 PrettyPacketAC.Version                  = "0.0.1"
 
+PrettyPacketAC.Heartbeat = true
 
 PrettyPacketAC.AntiGodMode = {
     enabled = true,
@@ -15,7 +16,14 @@ PrettyPacketAC.AntiGodMode = {
 PrettyPacketAC.AntiInfiniteStamina = {
     enabled = true,
     action = "WARN",
-    method2 = true -- More Resource Heavy but more effective
+    method2 = true -- Better for some worth for others IDK
+}
+
+
+PrettyPacketAC.AntiFastRun = {
+    enabled = true,
+    action = "WARN",
+    speed_limit = 8
 }
 
 PrettyPacketAC.AntiInvisible = {
@@ -34,6 +42,27 @@ PrettyPacketAC.AntiInfiniteAmmo = {
 }
 
 PrettyPacketAC.AntiHitboxModifier = {
+    enabled = true,
+    action = "WARN",
+}
+
+
+PrettyPacketAC.AntiNoClip = {
+    enabled = true,
+    action = "WARN",
+}
+
+PrettyPacketAC.AntiSuperJump = {
+    enabled = true,
+    action = "WARN",
+}
+
+PrettyPacketAC.AntiThermal = {
+    enabled = true,
+    action = "WARN",
+}
+
+PrettyPacketAC.NightVision = {
     enabled = true,
     action = "WARN",
 }
@@ -62,5 +91,5 @@ PrettyPacketAC.VehicleBlacklist = {
 }
 
 PrettyPacketAC.VehicleBlacklistDict = {
-    ["oppressor"] = true,
+    ["adder"] = true,
 }

@@ -42,6 +42,17 @@ Citizen.CreateThread(function()
         local currentHealth = GetEntityHealth(playerPed)
         --
 
+        if PrettyPacketAC.AntiThermal.enabled then
+            if GetUsingseethrough() and not IsPedInAnyHeli(PlayerPedId()) then
+                DebugLog("debug", "Thermal Detected")
+            end
+        end
+
+        if PrettyPacketAC.NightVision.enabled then
+            if GetUsingnightvision() and not IsPedInAnyHeli(PlayerPedId()) then
+                DebugLog("debug", "NightVision Detected")
+            end
+        end
 
         --Godmode
         if PrettyPacketAC.AntiGodMode.enabled then
@@ -179,8 +190,9 @@ CreateThread(function()
         if PrettyPacketAC.WeaponsBlacklist.enabled then
             Wait(200)
             for WeapName, WeapModel in pairs(PrettyPacketAC.WeaponsBlacklistDict) do
-                if HasPedGotWeapon(PlayerPedId(), GetHashKey(weaponmodel), false) == 1 then
+                if HasPedGotWeapon(PlayerPedId(), GetHashKey(WeapModel), false) == true then
                     DebugLog("debug", "Anti-Weapon Detected")
+                    RemoveAllPedWeapons(PlayerPedId(), true)
                 end
             end
         end
@@ -204,3 +216,76 @@ CreateThread(function()
 
     end
 end)
+
+
+if PrettyPacketAC.AntiNoClip.enabled then
+    Citizen.CreateThread(function()
+        local lastCoords = nil
+        local playerPed = PlayerPedId()
+
+        while true do
+            Wait(250)
+
+            if not IsPedInAnyVehicle(playerPed, false) then
+                local coords = GetEntityCoords(playerPed)
+
+                if not lastCoords then
+                    lastCoords = coords
+                else
+                    local distance = #(coords - lastCoords)
+                    local heightAboveGround = GetEntityHeightAboveGround(playerPed)
+                    local isFalling = IsPedFalling(playerPed)
+
+                    if distance > 10.0 and heightAboveGround > 4.0 and not isFalling then
+                        DebugLog("debug", "Anti-Noclip")
+                    end
+
+                    lastCoords = coords
+                end
+            end
+        end
+    end)
+end
+
+if PrettyPacketAC.AntiSuperJump.enabled then
+    Citizen.CreateThread(function()
+        local playerPed = PlayerPedId()
+        while true do
+            Wait(250)
+            if IsPedJumping(playerPed) and 
+               GetEntityHeightAboveGround(playerPed) > 7.0 and 
+               GetEntitySpeed(playerPed) > 8.0 and 
+               not IsPedFalling(playerPed) and 
+               not IsPedDiving(playerPed) then
+                DebugLog("debug", "Anti-Superjump")
+            end
+        end
+    end)
+end
+
+
+if PrettyPacketAC.AntiFastRun.enabled then
+    Citizen.CreateThread(function()
+        while true do
+            Citizen.Wait(1000)
+            local pSpeed = GetEntitySpeed(PlayerPedId())
+            if not IsPedInAnyVehicle(PlayerPedId(), false) and IsPedRunning(PlayerPedId()) and not IsPedRagdoll(PlayerPedId()) and not IsPedDeadOrDying(PlayerPedId(), false) and PrettyPacketAC.AntiFastRun.speed_limit > 10.0 and not IsPedClimbing(PlayerPedId()) and not IsPedDiving(PlayerPedId()) and not IsPedFalling(PlayerPedId()) and not IsPedInCover(PlayerPedId()) then
+                print("Detected")
+            end
+        end
+    end)
+end
+
+
+
+if PrettyPacketAC.Heartbeat then
+    Citizen.CreateThread(function()
+        while true do
+            Citizen.Wait(10000)
+            if playerSpawned then
+                DebugLog("debug", "Sending Heartbeat")
+                TriggerServerEvent("qb-target:saveupdatedpropstarget")
+            end
+        end
+    end)
+end
