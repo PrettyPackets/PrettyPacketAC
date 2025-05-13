@@ -3,15 +3,15 @@ You can find out more information in our discord.
 👉 [Join our Discord! 💬](https://discord.gg/XFwW3U42rK)
 
 
-
-
-
-
-
-
-
-
-
+.
+.
+.
+.
+.
+.
+.
+.
+.
 # 💖 PrettyPacketAC - Free Open Source Anticheat for FiveM💖
 
 Hey there, lovelies! 🌸✨ Welcome to **PrettyPacketAC** — the **cutest** and **most fabulous** ✨ FREE ✨ open-source anticheat project on the internet! 🎀
